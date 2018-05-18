@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF0403">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/anakinImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/mustafaranakin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Anakin"
+                    android:textColor="#FF0403"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/anakinScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/anakinImage"
+                    android:layout_centerHorizontal="true"
+                    android:text="100"
+                    android:textColor="#FF0403"
+                    android:textSize="70sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#000000" />
+
+                <Button
+                    android:id="@+id/anakinLightsaber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/anakinImage"
+                    android:layout_margin="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="anakinClash"
+                    android:text="Lightsaber Clash"
+                    android:textColor="#990000"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/forceChoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/anakinLightsaber"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="forceChoke"
+                    android:text="Force Choke"
+                    android:textColor="#990000"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/forceChoke"
+                    android:layout_margin="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="younglingSlaughter"
+                    android:text="Youngling Slaughter"
+                    android:textColor="#990000"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2719C7">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/obiwanImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/mustafarobiwan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Obi Wan"
+                    android:textColor="#2719C7"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/obiwanScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/obiwanImage"
+                    android:layout_centerHorizontal="true"
+                    android:text="100"
+                    android:textColor="#2719C7"
+                    android:textSize="70sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#000000" />
+
+                <Button
+                    android:id="@+id/obiwanLightsaber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/obiwanImage"
+                    android:layout_margin="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="obiwanClash"
+                    android:text="Lightsaber Clash"
+                    android:textColor="#000080"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/amputation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/obiwanLightsaber"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="amputation"
+                    android:text="Amputation"
+                    android:textColor="#000080"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/amputation"
+                    android:layout_margin="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="highGround"
+                    android:text="High Ground"
+                    android:textColor="#000080"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="rematch"
+        android:text="Rematch"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
