@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
      * Brings Anakin's score down to one point.
      */
     public void highGround(View v) {
-        anakinScore = anakinScore = 1;
+        anakinScore = 1;
         anakinScore(anakinScore);
     }
 
